@@ -1,10 +1,81 @@
+# ------------------------------
+# Unreal Engine
+# ------------------------------
+
+# Binaries, Intermediate builds, and cached data
 Binaries/
+Build/
 DerivedDataCache/
 Intermediate/
 Saved/
+Saved/Autosaves/
+Saved/Backup/
+Saved/Collections/
+Saved/StagedBuilds/
+Saved/Logs/
+Saved/Temp/
+
+# Unreal Engine project temporary files
+*.tmp
+*.log
+*.uat
+*.uhtmanifest
+*.mod
+*.pid
+*.dmp
+
+# Plugins build folders
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Ignore build artifacts per platform
+Build/Android/*
+Build/HTML5/*
+Build/Linux/*
+Build/Mac/*
+Build/Windows/*
+
+# Automation Tool junk
+Engine/Programs/AutomationTool/Saved/
+
+# ------------------------------
+# Visual Studio
+# ------------------------------
+.vs/
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userprefs
+*.cache
+*.obj
+*.pch
 *.pdb
+*.dll
 *.exe
-*.db
-*.bin
-*.ushaderbytecode
-*.uasset
+
+# Generated project files
+*.sln
+*.xcodeproj/
+*.xcworkspace/
+
+# ------------------------------
+# System files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Keep project files and content tracked
+# ------------------------------
+!*.uproject
+!Config/
+!Content/
+!Source/
+
+# ------------------------------
+# Git LFS placeholder for Unreal assets
+# ------------------------------
+# (Make sure your .gitattributes tracks these)
+# *.uasset
+# *.umap
